@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Paleta do produto: azul "confiança" + vermelho/verde para feedback. */
+@theme {
+  --color-marca: #1d4ed8;
+  --color-marca-escura: #1e3a8a;
+  --color-golpe: #dc2626;
+  --color-seguro: #16a34a;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
