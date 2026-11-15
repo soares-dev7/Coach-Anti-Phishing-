@@ -1,5 +1,6 @@
 "use client";
 
+import { Check, Flag, Link as LinkIcon } from "lucide-react";
 import type { Acao, Mensagem } from "@/lib/types";
 import ChannelBadge from "./ChannelBadge";
 
@@ -59,23 +60,26 @@ export default function MessageView({ mensagem, onAcao }: Props) {
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => onAcao("confiar")}
-            className="rounded-lg bg-seguro px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-seguro px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
           >
-            ✅ Confiar
+            <Check aria-hidden className="size-4" />
+            Confiar
           </button>
           <button
             onClick={() => onAcao("denunciar")}
-            className="rounded-lg bg-golpe px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-golpe px-4 py-2 text-sm font-semibold text-white hover:opacity-90"
           >
-            🚩 Denunciar
+            <Flag aria-hidden className="size-4" />
+            Denunciar
           </button>
           <button
             onClick={() => onAcao("clicar")}
             disabled={!mensagem.link}
-            className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
             title={mensagem.link ? undefined : "Esta mensagem não tem link"}
           >
-            🔗 Clicar no link
+            <LinkIcon aria-hidden className="size-4" />
+            Clicar no link
           </button>
         </div>
       </footer>

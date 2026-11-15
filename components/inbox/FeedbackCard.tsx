@@ -1,24 +1,33 @@
+import { CircleAlert, CircleCheck, Flag, Info, TriangleAlert, type LucideIcon } from "lucide-react";
 import type { Gravidade } from "@/lib/avaliacao";
 import { ROTULO_ACAO, ROTULO_GOLPE } from "@/lib/rotulos";
 import type { Acao, Mensagem } from "@/lib/types";
 
-/** Título, ícone e cor para cada tipo de resultado. */
-const ESTILO: Record<Gravidade, { titulo: string; icone: string; caixa: string }> = {
-  acerto: { titulo: "Boa! Você acertou.", icone: "🎉", caixa: "border-green-300 bg-green-50" },
+/** Título, ícone e cores para cada tipo de resultado. */
+const ESTILO: Record<Gravidade, { titulo: string; Icone: LucideIcon; caixa: string; corIcone: string }> = {
+  acerto: {
+    titulo: "Boa! Você acertou.",
+    Icone: CircleCheck,
+    caixa: "border-green-300 bg-green-50",
+    corIcone: "text-seguro",
+  },
   falso_alarme: {
     titulo: "Falso alarme: esta mensagem era legítima.",
-    icone: "🤔",
+    Icone: Info,
     caixa: "border-amber-300 bg-amber-50",
+    corIcone: "text-amber-600",
   },
   deixou_passar: {
     titulo: "Cuidado: esta mensagem era um golpe.",
-    icone: "⚠️",
+    Icone: TriangleAlert,
     caixa: "border-orange-300 bg-orange-50",
+    corIcone: "text-orange-600",
   },
   caiu_no_golpe: {
     titulo: "Você caiu no golpe!",
-    icone: "🎣",
+    Icone: CircleAlert,
     caixa: "border-red-300 bg-red-50",
+    corIcone: "text-golpe",
   },
 };
 
@@ -35,9 +44,7 @@ export default function FeedbackCard({ mensagem, acao, gravidade, explicacao }: 
 
   return (
     <section className={`rounded-xl border-2 p-6 ${estilo.caixa}`}>
-      <p className="text-4xl" aria-hidden>
-        {estilo.icone}
-      </p>
+      <estilo.Icone aria-hidden className={`size-10 ${estilo.corIcone}`} />
       <h1 className="mt-2 text-2xl font-bold">{estilo.titulo}</h1>
       <p className="mt-1 text-sm text-slate-700">
         Sua escolha: <strong>{ROTULO_ACAO[acao]}</strong> ·{" "}
@@ -64,7 +71,11 @@ export default function FeedbackCard({ mensagem, acao, gravidade, explicacao }: 
       <ul className="mt-2 space-y-2">
         {mensagem.sinais.map((sinal) => (
           <li key={sinal} className="flex gap-2 text-sm">
-            <span aria-hidden>{mensagem.ehGolpe ? "🚩" : "✅"}</span>
+            {mensagem.ehGolpe ? (
+              <Flag aria-hidden className="mt-0.5 size-4 shrink-0 text-golpe" />
+            ) : (
+              <CircleCheck aria-hidden className="mt-0.5 size-4 shrink-0 text-seguro" />
+            )}
             <span>{sinal}</span>
           </li>
         ))}

@@ -1,3 +1,4 @@
+import { ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 /** Barra superior compartilhada por todas as páginas. */
@@ -6,7 +7,7 @@ export default function Header() {
     <header className="border-b border-slate-200 bg-white">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2 font-bold text-marca-escura">
-          <span aria-hidden className="text-xl">🛡️</span>
+          <ShieldCheck aria-hidden className="size-5" />
           Coach Anti-Phishing
         </Link>
         <div className="flex gap-4 text-sm font-medium text-slate-600">

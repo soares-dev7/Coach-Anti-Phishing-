@@ -1,5 +1,6 @@
 "use client";
 
+import { Check, X } from "lucide-react";
 import type { Mensagem, Resposta } from "@/lib/types";
 import ChannelBadge from "./ChannelBadge";
 
@@ -36,11 +37,12 @@ export default function InboxList({ mensagens, respostas, selecionada, onSelecio
                 <ChannelBadge canal={m.canal} />
                 {resposta && (
                   <span
-                    className={`text-xs font-semibold ${
+                    className={`inline-flex items-center gap-0.5 text-xs font-semibold ${
                       resposta.correta ? "text-seguro" : "text-golpe"
                     }`}
                   >
-                    {resposta.correta ? "✓ Acertou" : "✗ Errou"}
+                    {resposta.correta ? <Check aria-hidden className="size-3" /> : <X aria-hidden className="size-3" />}
+                    {resposta.correta ? "Acertou" : "Errou"}
                   </span>
                 )}
               </div>
