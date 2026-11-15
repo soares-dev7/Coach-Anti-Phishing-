@@ -1,0 +1,258 @@
+{
+  "empresa": "Distribuidora Aurora (fictícia)",
+  "atualizadoEm": "2026-11-14",
+  "funcionarios": [
+    {
+      "id": "f01",
+      "nome": "Ana Souza",
+      "setor": "Financeiro",
+      "resultados": {
+        "pix_falso": {
+          "acertos": 4,
+          "total": 4,
+          "cliques": 0
+        },
+        "boleto_adulterado": {
+          "acertos": 3,
+          "total": 3,
+          "cliques": 0
+        },
+        "falsa_central": {
+          "acertos": 3,
+          "total": 3,
+          "cliques": 0
+        },
+        "chefe_falso": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        },
+        "entrega_falsa": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        },
+        "rh_falso": {
+          "acertos": 3,
+          "total": 3,
+          "cliques": 0
+        },
+        "legitima": {
+          "acertos": 4,
+          "total": 4,
+          "cliques": 0
+        }
+      }
+    },
+    {
+      "id": "f02",
+      "nome": "Bruno Lima",
+      "setor": "Comercial",
+      "resultados": {
+        "pix_falso": {
+          "acertos": 1,
+          "total": 3,
+          "cliques": 2
+        },
+        "boleto_adulterado": {
+          "acertos": 2,
+          "total": 5,
+          "cliques": 1
+        },
+        "falsa_central": {
+          "acertos": 2,
+          "total": 5,
+          "cliques": 1
+        },
+        "chefe_falso": {
+          "acertos": 2,
+          "total": 4,
+          "cliques": 0
+        },
+        "entrega_falsa": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 0
+        },
+        "rh_falso": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 0
+        },
+        "legitima": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 0
+        }
+      }
+    },
+    {
+      "id": "f03",
+      "nome": "Camila Rocha",
+      "setor": "Administrativo",
+      "resultados": {
+        "pix_falso": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        },
+        "boleto_adulterado": {
+          "acertos": 3,
+          "total": 5,
+          "cliques": 2
+        },
+        "falsa_central": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 1
+        },
+        "chefe_falso": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        },
+        "entrega_falsa": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 0
+        },
+        "rh_falso": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 0
+        },
+        "legitima": {
+          "acertos": 4,
+          "total": 5,
+          "cliques": 0
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "nome": "Diego Martins",
+      "setor": "Logística",
+      "resultados": {
+        "pix_falso": {
+          "acertos": 2,
+          "total": 5,
+          "cliques": 1
+        },
+        "boleto_adulterado": {
+          "acertos": 2,
+          "total": 4,
+          "cliques": 2
+        },
+        "falsa_central": {
+          "acertos": 2,
+          "total": 4,
+          "cliques": 1
+        },
+        "chefe_falso": {
+          "acertos": 1,
+          "total": 3,
+          "cliques": 0
+        },
+        "entrega_falsa": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 1
+        },
+        "rh_falso": {
+          "acertos": 3,
+          "total": 5,
+          "cliques": 2
+        },
+        "legitima": {
+          "acertos": 2,
+          "total": 5,
+          "cliques": 0
+        }
+      }
+    },
+    {
+      "id": "f05",
+      "nome": "Elisa Ferreira",
+      "setor": "RH",
+      "resultados": {
+        "pix_falso": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        },
+        "boleto_adulterado": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        },
+        "falsa_central": {
+          "acertos": 5,
+          "total": 5,
+          "cliques": 0
+        },
+        "chefe_falso": {
+          "acertos": 3,
+          "total": 5,
+          "cliques": 0
+        },
+        "entrega_falsa": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        },
+        "rh_falso": {
+          "acertos": 4,
+          "total": 5,
+          "cliques": 1
+        },
+        "legitima": {
+          "acertos": 3,
+          "total": 4,
+          "cliques": 0
+        }
+      }
+    },
+    {
+      "id": "f06",
+      "nome": "Felipe Nunes",
+      "setor": "Comercial",
+      "resultados": {
+        "pix_falso": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 1
+        },
+        "boleto_adulterado": {
+          "acertos": 1,
+          "total": 3,
+          "cliques": 0
+        },
+        "falsa_central": {
+          "acertos": 4,
+          "total": 5,
+          "cliques": 1
+        },
+        "chefe_falso": {
+          "acertos": 3,
+          "total": 5,
+          "cliques": 0
+        },
+        "entrega_falsa": {
+          "acertos": 1,
+          "total": 3,
+          "cliques": 0
+        },
+        "rh_falso": {
+          "acertos": 2,
+          "total": 3,
+          "cliques": 1
+        },
+        "legitima": {
+          "acertos": 3,
+          "total": 5,
+          "cliques": 0
+        }
+      }
+    }
+  ]
+}

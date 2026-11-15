@@ -1,0 +1,212 @@
+[
+  {
+    "id": "m01",
+    "canal": "email",
+    "remetente": { "nome": "PagaFácil Pagamentos", "endereco": "nao-responda@pagafacil-confirma.online" },
+    "assunto": "Você recebeu um Pix de R$ 1.850,00 — confirme o recebimento",
+    "corpo": "Olá!\n\nUm Pix no valor de R$ 1.850,00 foi enviado para sua empresa, mas está BLOQUEADO aguardando confirmação.\n\nPara liberar o valor, confirme seus dados em até 30 minutos. Após esse prazo, o valor será devolvido ao pagador.\n\nAtenciosamente,\nEquipe PagaFácil",
+    "recebidaEm": "08:47",
+    "link": { "texto": "Confirmar recebimento do Pix", "urlExibida": "https://pagafacil-confirma.online/liberar?id=88231" },
+    "ehGolpe": true,
+    "tipoGolpe": "pix_falso",
+    "sinais": [
+      "Pix não precisa de \"confirmação\" para cair na conta: ou entrou, ou não entrou",
+      "Prazo curto (30 minutos) para criar pressa",
+      "Domínio estranho (.online) que não é de nenhum banco que a empresa usa",
+      "Pede para confirmar dados por link em vez de conferir no aplicativo do banco"
+    ],
+    "explicacao": "Golpe do falso Pix: a mensagem finge que há dinheiro esperando por você para que você clique e entregue dados. Para saber se um Pix chegou, abra o aplicativo oficial do banco da empresa — nunca um link recebido por e-mail."
+  },
+  {
+    "id": "m02",
+    "canal": "email",
+    "remetente": { "nome": "Financeiro Gráfica Ponto Certo", "endereco": "financeiro@graficapontocerto-boletos.net" },
+    "assunto": "URGENTE: novo boleto NF 4471 — o anterior foi cancelado",
+    "corpo": "Prezados,\n\nInformamos que o boleto referente à NF 4471 (R$ 3.240,00) foi CANCELADO por mudança de banco.\n\nSegue em anexo a nova via com os dados atualizados. Pedimos que o pagamento seja feito HOJE para evitar juros e protesto.\n\nQualquer dúvida, responda este e-mail.\n\nAtt,\nDepto. Financeiro",
+    "recebidaEm": "09:05",
+    "link": { "texto": "Baixar boleto_NF4471_atualizado.pdf", "urlExibida": "https://graficapontocerto-boletos.net/2via/NF4471.pdf" },
+    "ehGolpe": true,
+    "tipoGolpe": "boleto_adulterado",
+    "sinais": [
+      "Domínio diferente do que o fornecedor costuma usar (\"-boletos.net\")",
+      "Diz que o boleto antigo foi cancelado e que os dados bancários mudaram",
+      "Urgência e ameaça de juros e protesto",
+      "Pede para tirar dúvidas respondendo o próprio e-mail suspeito"
+    ],
+    "explicacao": "Golpe do boleto adulterado: o criminoso se passa por um fornecedor real e troca o beneficiário do boleto. Antes de pagar, confira o nome do beneficiário e o CNPJ no aplicativo do banco e confirme a mudança ligando para o telefone do fornecedor que já está no seu cadastro."
+  },
+  {
+    "id": "m03",
+    "canal": "whatsapp",
+    "remetente": { "nome": "Central Seg. Banco Horizonte", "endereco": "+55 11 9 4321-0987" },
+    "assunto": "Compra de R$ 4.990,00 detectada no seu cartão",
+    "corpo": "🔒 BANCO HORIZONTE – CENTRAL DE SEGURANÇA\n\nIdentificamos uma compra de R$ 4.990,00 em ELETRO MAX no cartão final 2231.\n\nSe NÃO reconhece, cancele agora pelo link abaixo ou responda com o código que enviaremos por SMS. Um atendente vai te ligar para concluir o cancelamento.",
+    "recebidaEm": "09:31",
+    "link": { "texto": "Cancelar compra", "urlExibida": "https://horizonte-seguranca-cartao.com/cancelar" },
+    "ehGolpe": true,
+    "tipoGolpe": "falsa_central",
+    "sinais": [
+      "Banco não manda link por WhatsApp para cancelar compras",
+      "Pede o código recebido por SMS — esse código é a chave da sua conta",
+      "Número de celular comum, não um canal oficial verificado",
+      "Valor alto para causar susto e agir sem pensar"
+    ],
+    "explicacao": "Golpe da falsa central: o objetivo é te assustar para você clicar, passar códigos ou atender a ligação de um \"atendente\" falso. Desconfiou? Desligue, abra o aplicativo do banco ou ligue para o número que está no verso do cartão."
+  },
+  {
+    "id": "m04",
+    "canal": "email",
+    "remetente": { "nome": "Carla Mendes", "endereco": "carla.mendes.diretoria@mailrapido.com" },
+    "assunto": "Preciso de um favor rápido e confidencial",
+    "corpo": "Oi, tudo bem?\n\nEstou em uma reunião com um cliente importante e não consigo falar por telefone.\n\nPreciso que você compre 5 cartões-presente de R$ 500,00 para darmos de brinde. É uma surpresa, então não comente com ninguém por enquanto.\n\nAssim que comprar, me mande os códigos por aqui. Depois o financeiro te reembolsa.\n\nObrigada!\nCarla Mendes\nDiretora",
+    "recebidaEm": "10:02",
+    "ehGolpe": true,
+    "tipoGolpe": "chefe_falso",
+    "sinais": [
+      "E-mail pessoal de provedor genérico, não o e-mail corporativo da diretora",
+      "Pedido de sigilo (\"não comente com ninguém\")",
+      "Diz que não pode falar por telefone, impedindo a confirmação",
+      "Pede cartões-presente e os códigos — dinheiro impossível de rastrear"
+    ],
+    "explicacao": "Golpe do falso chefe: o criminoso usa o nome de alguém com autoridade e cria pressa e sigilo. Nenhum pedido de compra, transferência ou gift card deve ser atendido sem confirmar por outro canal (telefone conhecido ou pessoalmente)."
+  },
+  {
+    "id": "m05",
+    "canal": "whatsapp",
+    "remetente": { "nome": "Entregas Já", "endereco": "+55 21 9 8877-6655" },
+    "assunto": "Sua encomenda está retida no centro de distribuição",
+    "corpo": "Entregas Já informa: a encomenda EJ394821BR está RETIDA por falta de pagamento da taxa de reentrega (R$ 4,90).\n\nRegularize em até 24h ou o objeto será devolvido ao remetente.",
+    "recebidaEm": "10:40",
+    "link": { "texto": "Pagar taxa de R$ 4,90", "urlExibida": "https://entregasja-rastreio.site/taxa?cod=EJ394821BR" },
+    "ehGolpe": true,
+    "tipoGolpe": "entrega_falsa",
+    "sinais": [
+      "Cobrança de taxa pequena por link — o valor baixo é para você não desconfiar",
+      "Ninguém da empresa estava esperando essa encomenda",
+      "Prazo curto e ameaça de devolução",
+      "Domínio \".site\" que não é o site oficial da transportadora"
+    ],
+    "explicacao": "Golpe da falsa entrega: a taxa é pequena, mas o formulário captura dados do cartão. Consulte o código de rastreio direto no site oficial digitado por você, nunca pelo link da mensagem."
+  },
+  {
+    "id": "m06",
+    "canal": "email",
+    "remetente": { "nome": "RH - Recursos Humanos", "endereco": "rh@aurora-colaboradores.info" },
+    "assunto": "Atualização cadastral OBRIGATÓRIA até hoje — risco de bloqueio do salário",
+    "corpo": "Prezado colaborador,\n\nDevido à nova regra do eSocial, todos os funcionários devem atualizar seus dados bancários e documentos até as 18h de hoje.\n\nQuem não atualizar terá o salário deste mês BLOQUEADO.\n\nAcesse o formulário pelo link abaixo e tenha em mãos a senha do seu banco para validação.\n\nRecursos Humanos",
+    "recebidaEm": "11:15",
+    "link": { "texto": "Atualizar meus dados", "urlExibida": "https://aurora-colaboradores.info/atualizacao-cadastral" },
+    "ehGolpe": true,
+    "tipoGolpe": "rh_falso",
+    "sinais": [
+      "Domínio que não é o da empresa (\"aurora-colaboradores.info\")",
+      "Ameaça de bloqueio do salário para gerar medo",
+      "Pede senha do banco — nenhum RH precisa da sua senha",
+      "Mensagem genérica (\"Prezado colaborador\"), sem seu nome"
+    ],
+    "explicacao": "Golpe do falso RH: usa um assunto sensível (salário) para apressar você. O RH de verdade usa o portal interno e nunca pede senhas. Na dúvida, fale com o RH pessoalmente ou pelo ramal."
+  },
+  {
+    "id": "m07",
+    "canal": "whatsapp",
+    "remetente": { "nome": "Carla Mendes (novo número)", "endereco": "+55 11 9 7012-3344" },
+    "assunto": "Oi! Salva esse meu número novo",
+    "corpo": "Oi, aqui é a Carla, troquei de número, pode salvar 😊\n\nAproveitando: preciso pagar um fornecedor agora e o app do banco travou. Consegue fazer um Pix de R$ 2.700,00 para essa chave? Te passo os dados e amanhã acerto no financeiro. É urgente, ele está esperando.",
+    "recebidaEm": "11:48",
+    "ehGolpe": true,
+    "tipoGolpe": "chefe_falso",
+    "sinais": [
+      "Número novo e desconhecido dizendo ser alguém conhecido",
+      "Pedido de dinheiro logo depois de \"trocar de número\"",
+      "Desculpa para não usar o canal normal (\"o app travou\")",
+      "Urgência e promessa de acerto depois"
+    ],
+    "explicacao": "Golpe do falso chefe/número novo: a foto e o nome podem ser copiados de redes sociais. Ligue para o número antigo ou confirme pessoalmente antes de qualquer Pix."
+  },
+  {
+    "id": "m08",
+    "canal": "whatsapp",
+    "remetente": { "nome": "Cliente - Roberto", "endereco": "+55 31 9 9123-4567" },
+    "assunto": "Já fiz o Pix do pedido, segue comprovante",
+    "corpo": "Boa tarde! Já paguei o pedido 1520 (R$ 980,00) por Pix agora há pouco.\n\nSegue o comprovante. Pode liberar a mercadoria pro motoboy que está chegando aí? Estou com pressa.",
+    "recebidaEm": "13:22",
+    "link": { "texto": "comprovante_pix_1520.pdf", "urlExibida": "https://comprovantes-pix.click/ver/1520" },
+    "ehGolpe": true,
+    "tipoGolpe": "pix_falso",
+    "sinais": [
+      "Comprovante enviado por link, e não como imagem do próprio app do banco",
+      "Pressão para liberar a mercadoria antes de conferir o extrato",
+      "Domínio suspeito (\".click\")",
+      "Um comprovante pode ser falsificado: só vale o dinheiro na conta"
+    ],
+    "explicacao": "Golpe do comprovante falso de Pix: o criminoso manda um \"comprovante\" e pede a mercadoria com pressa. Só libere depois de ver o valor no extrato da conta da empresa."
+  },
+  {
+    "id": "m09",
+    "canal": "email",
+    "remetente": { "nome": "Júlia Andrade", "endereco": "julia.andrade@distribuidoraaurora.com.br" },
+    "assunto": "Reunião de alinhamento na sexta às 10h",
+    "corpo": "Oi, pessoal!\n\nNa sexta-feira às 10h teremos a reunião mensal de alinhamento na sala 2. A pauta é o fechamento de novembro e o planejamento das férias coletivas.\n\nSe não puder participar, me avisa até quinta.\n\nAbraços,\nJúlia\nCoordenação Administrativa",
+    "recebidaEm": "08:12",
+    "ehGolpe": false,
+    "tipoGolpe": null,
+    "sinais": [
+      "Remetente com e-mail corporativo da empresa",
+      "Não pede dinheiro, dados nem cliques",
+      "Assunto coerente com a rotina da equipe",
+      "Sem urgência artificial"
+    ],
+    "explicacao": "Mensagem legítima: é uma comunicação interna comum, de um remetente conhecido, sem pedidos sensíveis. Confiar é a ação correta."
+  },
+  {
+    "id": "m10",
+    "canal": "email",
+    "remetente": { "nome": "Banco Horizonte", "endereco": "comunicados@bancohorizonte.com.br" },
+    "assunto": "Seu extrato mensal de outubro está disponível",
+    "corpo": "Olá, Distribuidora Aurora.\n\nSeu extrato consolidado de outubro já está disponível no aplicativo Banco Horizonte Empresas, na seção \"Extratos\".\n\nLembre-se: o Banco Horizonte nunca envia links para login, nunca pede senhas e nunca solicita códigos recebidos por SMS.\n\nBanco Horizonte",
+    "recebidaEm": "07:55",
+    "ehGolpe": false,
+    "tipoGolpe": null,
+    "sinais": [
+      "Não tem link: orienta a abrir o aplicativo oficial",
+      "Não pede dados, senhas ou códigos",
+      "Chama a empresa pelo nome correto",
+      "Reforça boas práticas de segurança"
+    ],
+    "explicacao": "Mensagem legítima: comunicados verdadeiros de banco costumam apenas informar e mandar você para o aplicativo oficial, sem links de login."
+  },
+  {
+    "id": "m11",
+    "canal": "whatsapp",
+    "remetente": { "nome": "Grupo Equipe Aurora · Marcos", "endereco": "+55 11 9 5555-1020" },
+    "assunto": "Confraternização de fim de ano dia 12/12",
+    "corpo": "Pessoal, a confraternização vai ser dia 12/12, a partir das 19h, no restaurante aqui do lado. Quem vai confirma com a Júlia até sexta 🎉",
+    "recebidaEm": "12:30",
+    "ehGolpe": false,
+    "tipoGolpe": null,
+    "sinais": [
+      "Mensagem no grupo da equipe, de colega já conhecido",
+      "Não pede dinheiro, dados ou cliques",
+      "Informação que pode ser confirmada com a Júlia pessoalmente"
+    ],
+    "explicacao": "Mensagem legítima: recado informal da equipe, sem nenhum pedido sensível."
+  },
+  {
+    "id": "m12",
+    "canal": "email",
+    "remetente": { "nome": "RH Distribuidora Aurora", "endereco": "rh@distribuidoraaurora.com.br" },
+    "assunto": "Holerite de outubro disponível no portal interno",
+    "corpo": "Olá, equipe!\n\nOs holerites de outubro já estão disponíveis no portal interno, no mesmo endereço de sempre. O acesso é feito com o seu login da empresa.\n\nO RH nunca pede senha do banco ou dados bancários por e-mail. Dúvidas, fale com a gente no ramal 210.\n\nRH Distribuidora Aurora",
+    "recebidaEm": "14:05",
+    "link": { "texto": "Abrir portal interno", "urlExibida": "https://intranet.distribuidoraaurora.com.br/holerites" },
+    "ehGolpe": false,
+    "tipoGolpe": null,
+    "sinais": [
+      "E-mail e link no domínio oficial da empresa",
+      "Portal interno conhecido (\"o mesmo endereço de sempre\")",
+      "Não pede senha do banco nem dados bancários",
+      "Oferece um canal alternativo de contato (ramal)"
+    ],
+    "explicacao": "Mensagem legítima: o link aponta para o portal interno da empresa, no domínio oficial. Confiar ou acessar o portal são ações corretas."
+  }
+]
